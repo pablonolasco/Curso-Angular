@@ -9,9 +9,11 @@ if(true){
 
 console.log(mensaje);
 */
-//tsc ejecutar en linea de comando para que guarde la configuracion tipo typescript
-//tsc -init convertir a tipo type script el proyecto
-/*Tipo de Datos */
+//!tsc ejecutar en linea de comando para que guarde la configuracion tipo typescript
+//!tsc -init convertir a tipo type script el proyecto
+/**
+ * TODO Tipo de Datos
+ *  */
 var nombre;
 var numero;
 var booleano;
@@ -32,12 +34,14 @@ spiderman = {
 };
 var temaplateLiteral = "Hola " + nombre + " edad (" + numero + ")";
 //console.log(temaplateLiteral);
-/**Funciones */
+/**
+ * TODO Funciones
+ * */
 function activar(quien, objeto, momento) {
     /**
-     * momento?:string, es una variable opcional
-     * No se deben declaral variables opcionales al inicio de la funcion
-     * Debes cumplir con el orden en el paso de las variables al llamar la funcion
+     * *momento?:string, es una variable opcional
+     * *No se deben declaral variables opcionales al inicio de la funcion
+     * *Debes cumplir con el orden en el paso de las variables al llamar la funcion
      */
     if (objeto === void 0) { objeto = "batiseñal"; }
     var mensaje;
@@ -50,7 +54,9 @@ function activar(quien, objeto, momento) {
     console.log(mensaje);
 }
 //activar("Batman","lampara","noche");
-/** Fetch Arrow */
+/**
+ * TODO Fetch Arrow
+ * */
 var miFuncion = function (info) {
     console.log("" + info);
 };
@@ -79,7 +85,10 @@ var hulk = {
     }
 };
 //miFuncion("esta es una un arrow funcion");
-/**Destucturacion de objetos y arreglos */
+/**
+ * TODO Destucturacion de objetos y arreglos
+ *
+  */
 var avenger = {
     name_a: "Steve",
     clave: "Capitan America",
@@ -87,21 +96,21 @@ var avenger = {
 };
 var name_a = avenger.name_a, poder = avenger.poder, clave = avenger.clave;
 /**
- * Cuando es un objeto no importa el orden si se coloca name_a:string, despues de los dos puntos lo toma como un alias
- * let { } modo de desctructuracion
+ ** Cuando es un objeto no importa el orden si se coloca name_a:string, despues de los dos puntos lo toma como un alias
+ * *let { } modo de desctructuracion
  */
 var arregloAvenge = ["Thor", "Capitan", "Tony"];
 var thr = arregloAvenge[0], steve = arregloAvenge[1], tonny = arregloAvenge[2];
 var stark = arregloAvenge[2];
-/**
- * Cuando es un arreglo, toma los valores con base a la posicion del mismo.
- */
-//console.log(avenger);
-//console.log(stark);
-/**Promise */
-var aplicarDescuento = new Promise(function (resolve, reject) {
-    setTimeout(function () {
-        console.log("Promesa terminamos");
-        resolve();
-    }, 1500);
-});
+function enviarMision(xmen) {
+    console.log('Enviando a:' + xmen.nombre);
+}
+function enviarCuartel(xmen) {
+    console.log('Enviando al cuartel:' + xmen.nombre);
+}
+var wolwerine = {
+    nombre: 'Wolverine',
+    poder: 'Regeneracion'
+};
+enviarMision(wolwerine);
+enviarCuartel(wolwerine);

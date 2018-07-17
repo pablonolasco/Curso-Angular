@@ -8,10 +8,12 @@ if(true){
 
 console.log(mensaje);
 */
-//tsc ejecutar en linea de comando para que guarde la configuracion tipo typescript
-//tsc -init convertir a tipo type script el proyecto
+//!tsc ejecutar en linea de comando para que guarde la configuracion tipo typescript
+//!tsc -init convertir a tipo type script el proyecto
 
-/*Tipo de Datos */
+/**
+ * TODO Tipo de Datos
+ *  */
 let nombre:string;
 let numero:number;
 let booleano:boolean;
@@ -38,13 +40,15 @@ spiderman={
 let temaplateLiteral=`Hola ${nombre} edad (${numero})`;
 
 //console.log(temaplateLiteral);
-/**Funciones */
+/**
+ * TODO Funciones 
+ * */
 
 function activar( quien:string, objeto:string="batiseñal", momento?:string){
 /**
- * momento?:string, es una variable opcional
- * No se deben declaral variables opcionales al inicio de la funcion
- * Debes cumplir con el orden en el paso de las variables al llamar la funcion
+ * *momento?:string, es una variable opcional
+ * *No se deben declaral variables opcionales al inicio de la funcion
+ * *Debes cumplir con el orden en el paso de las variables al llamar la funcion
  */
 
      let mensaje:string;
@@ -59,7 +63,9 @@ function activar( quien:string, objeto:string="batiseñal", momento?:string){
 
 //activar("Batman","lampara","noche");
 
-/** Fetch Arrow */
+/** 
+ * TODO Fetch Arrow 
+ * */
 
 let miFuncion=(info:string)=>{
      console.log(`${info}`);
@@ -100,7 +106,10 @@ let hulk={
 }
 //miFuncion("esta es una un arrow funcion");
 
-/**Destucturacion de objetos y arreglos */
+/**
+ * TODO Destucturacion de objetos y arreglos
+ * 
+  */
 
 let avenger={
      name_a:"Steve",
@@ -110,20 +119,22 @@ let avenger={
 
 let{name_a,poder,clave}=avenger;
 /**
- * Cuando es un objeto no importa el orden si se coloca name_a:string, despues de los dos puntos lo toma como un alias
- * let { } modo de desctructuracion
+ ** Cuando es un objeto no importa el orden si se coloca name_a:string, despues de los dos puntos lo toma como un alias
+ * *let { } modo de desctructuracion
  */
 
  let arregloAvenge:string[]=["Thor","Capitan","Tony"];
  let [thr,steve,tonny]=arregloAvenge;
  let [, , stark]=arregloAvenge;
  /**
-  * Cuando es un arreglo, toma los valores con base a la posicion del mismo.
+  * *Cuando es un arreglo, toma los valores con base a la posicion del mismo.
   */
 //console.log(avenger);
 //console.log(stark);
 
-/**Promise */
+/**  
+ * TODO Promise
+ */
 /*
 const aplicarDescuento= new Promise(function(resolve,reject){
      const descuento=false;
@@ -138,3 +149,31 @@ aplicarDescuento.then(function(mensaje){
 }).catch(function(error){
  console.log(error);//va de la mano de reject
 });*/
+
+/**
+ * TODO Interface
+ */
+interface Xmen{
+    nombre:string,
+    poder:string
+}
+
+function enviarMision(xmen:Xmen){
+    console.log('Enviando a:'+xmen.nombre);
+
+}
+
+
+function enviarCuartel(xmen:Xmen){
+    console.log('Enviando al cuartel:'+xmen.nombre);
+
+}
+
+let wolwerine={
+    nombre:'Wolverine',
+    poder:'Regeneracion'
+};
+
+enviarMision(wolwerine)
+enviarCuartel(wolwerine);
+
