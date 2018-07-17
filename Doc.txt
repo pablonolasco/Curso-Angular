@@ -1,0 +1,8 @@
+Componentes- Es un bloque de la pagina web, menu, barra lateral, contenido, footer
+Directivas estrcuturales- le indic al html como funcionar
+		ngif=true->muestra en la pagina
+		ngif=false->false- oculta el elemento y no aparece en el inspector de elementos
+
+		ngfor->mostrarios varios elementos
+
+
