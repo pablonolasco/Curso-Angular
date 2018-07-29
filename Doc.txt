@@ -6,3 +6,44 @@ Directivas estrcuturales- le indic al html como funcionar
 		ngfor->mostrarios varios elementos
 
 
+//Comando para crear un proyecto en angular
+ng new my-app
+
+//Iniciar el servidor
+ng serve
+//Cambiar puerto por defecto 4200
+ng serve -p 4100
+//Con navegador por defecto abierto
+ng serve -o
+//Cnacelar Proceso en la consola
+CTRL+C
+
+//comando para crear Componentes
+ng g c carpeta/ nombre componente, g generate, c component
+//**  Estructura del proyecto **//
+Carpeta
+e2e - Sirve para generar pruebas unitarias
+node_modules -Modulos cargados de node, en modo desarrollo crea todo los modulos, y en produccion
+src carpeta de archivos
+	 
+	app.component.ts - primer archivo que carga angular
+	ap.component.html va de la mano con el app.component.ts
+
+assets 
+	recursos estaticos de la aplicacion
+
+	index
+	 <app-root></app-root> esta declarado el componente en el archivo app.component.ts
+environments
+	variables de 
+	environments.ts desarrollo
+	environments.prod.js produccion
+
+
+angular.json - le dice a angular 
+	assets -recursos
+	styles -styles de hoja
+	scripts -js a cargar
+package.json configuracion de las dependencias  
+
+tsconfig.json - configuracion para indicar que version de ts va a utilizar la aplicacion es5 o es6
