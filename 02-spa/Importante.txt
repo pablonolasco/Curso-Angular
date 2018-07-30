@@ -1,0 +1,38 @@
+//Comando para crear un proyecto en angular
+ng new my-app
+
+//Iniciar el servidor
+ng serve
+//Cambiar puerto por defecto 4200
+ng serve -p 4100
+//Con navegador por defecto abierto
+ng serve -o
+//Cnacelar Proceso en la consola
+CTRL+C
+//Instalar boostrap
+npm install boostrap --save
+//Instalar Jquery
+npm install jquery --save
+//Install popper
+npm install popper.js --save
+//comando para crear Componentes
+ng g c carpeta/ nombre componente, g generate, c component
+
+///Agregar lineas al archivo angular.json
+
+desventaja que se hace mas pesada la aplicacion, ya que descarga todo el complemento
+ "projects": {
+
+
+
+        "styles": [
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.slim.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+          }
+ }
