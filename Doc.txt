@@ -17,7 +17,12 @@ ng serve -p 4100
 ng serve -o
 //Cnacelar Proceso en la consola
 CTRL+C
-
+//Instalar boostrap
+npm install boostrap --save
+//Instalar Jquery
+npm install jquery --save
+//Install popper
+npm install popper.js --save
 //comando para crear Componentes
 ng g c carpeta/ nombre componente, g generate, c component
 //**  Estructura del proyecto **//
